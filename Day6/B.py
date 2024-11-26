@@ -27,5 +27,5 @@ for i,lenght in enumerate(lenghts):
         path = paths[i]
         break
 for node in path:
-    str += node
+    str += node[0]
 print(str)

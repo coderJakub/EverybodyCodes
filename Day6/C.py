@@ -13,7 +13,7 @@ def bfs(tree, start):
         if '@' ==node:
             paths.append(path)
             continue
-        if node not in tree.keys():
+        if node not in tree.keys() or node == 'BUG' or node == 'ANT':
             continue
         for neighbor in tree[node]:
             queue.append([neighbor, path + [neighbor]]) 
@@ -27,5 +27,5 @@ for i,lenght in enumerate(lenghts):
         path = paths[i]
         break
 for node in path:
-    str += node
+    str += node[0]
 print(str)
