@@ -26,13 +26,14 @@ import sys
 import os
 import subprocess
 import time
+import requests
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
-def createFile(file, content=""):
-    if not os.path.isfile(file):
-        with open(file, "w") as f:
-            f.write(content)
-            
-def startProcess(file, inFile):
+def createFile(file: str, content: str = ""):
+    if not os.path.exists(file) or os.path.getsize(file) == 0:
+        open(file, "w").write(content)
+
+def startProcess(file: str, inFile: str):
     process = subprocess.Popen(
         ["python", file, inFile],
         stdout=subprocess.PIPE,
@@ -51,6 +52,35 @@ def startProcess(file, inFile):
     sys.stdout.write(f"\r   {RED}Part {part}: {GREEN}{output.strip()}{RESET}{END}\n")
     sys.stdout.flush()
 
+def getCookie() -> dict:
+    with open("cookie.txt") as f:
+        cookie = f.read().strip()
+        return {
+            "Cookie": f"everybody-codes={cookie}"
+        }
+    
+def decryptData(data: str, key: str) -> str:
+    keyB = key.encode()
+    iv = keyB[:16]
+    
+    cipher = Cipher(algorithms.AES(keyB), modes.CBC(iv))
+    decryptor = cipher.decryptor()
+    input_bytes = bytes.fromhex(data)
+    decrypted_bytes = decryptor.update(input_bytes) + decryptor.finalize()
+    pad_length = decrypted_bytes[-1]
+    result = decrypted_bytes[:-pad_length].decode()
+    return result
+
+def getInputData(day: int, part: int) -> str:
+    headers = getCookie()
+    seed = requests.get(f"https://everybody.codes/api/user/me", headers=headers).json()['seed']
+    data = requests.get(f"https://everybody-codes.b-cdn.net/assets/2025/{day}/input/{seed}.json", headers=headers).json()
+    key = requests.get(f"https://everybody.codes/api/event/2025/quest/{day}", headers=headers).json()
+    
+    if key.get(f'key{part}') is None:
+        return ""
+    return decryptData(data[f"{part}"], key[f'key{part}'])
+
 cwd = os.getcwd()
 
 day = int(sys.argv[1])
@@ -67,7 +97,7 @@ for part in parts:
     file = f"{dayDir}/p{part}.py"
     inFile = dayDir+f"/in{part}.txt"
     createFile(file, TEMPLATE)
-    createFile(inFile)
+    createFile(inFile, getInputData(day, part))
     
     if not len(sys.argv) > 3:
         startProcess(file, inFile)
