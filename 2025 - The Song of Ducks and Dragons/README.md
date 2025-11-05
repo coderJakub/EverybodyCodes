@@ -8,7 +8,7 @@
 |-----|:------:|:------:|:------:|
 | **1**  | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day01/p1.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day01/p2.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day01/p3.py) |
 | **2**  | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day02/p1.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day02/p2.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day02/p3.py) |
-| **3**  | ❌ | ❌ | ❌ |
+| **3**  | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day03/p1.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day03/p2.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day03/p3.py) |
 | **4**  | ❌ | ❌ | ❌ |
 | **5**  | ❌ | ❌ | ❌ |
 | **6**  | ❌ | ❌ | ❌ |
