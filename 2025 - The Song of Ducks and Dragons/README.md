@@ -1,10 +1,26 @@
 # 🧩 Everybody Codes 2025 
+This directory contains my solutions for the coding challenge event [Everybody Codes 2025: The Song of Ducks and Dragons](https://everybody.codes/event/2025/quests). Each day's challenge is organized into its own folder, with separate files for each part of the challenge. I used mostly `Python` to solve the challenges.
 
-[Everybody Codes](https://everybody.codes/event/2025/quests) ist ein jährliches Programmier-Event, das im Stil von Advent of Code oder anderen Coding-Challenges aufgebaut ist. Das Event dauert 20 Tage (typischerweise im November). Jeder Tag besteht aus 3 Teilen, die jeweils eine eigene Herausforderung darstellen.
+## 🚀 Running the solutions:
+### Prerequisites
+- Python 3.x installed on your machine.
+- to be able to download the input files you have to create a file `cookie.txt` in this directory and put in your session cookie from everybody.codes 
+    - you can find your session cookie by pressing `F12` in your browser, going to the `Application` tab, and looking for the `session` cookie under `Cookies` for the `everybody.codes` domain.
 
-##  📅 Fortschritt
+### Instructions    
+```bash
+python runDay.py <day>
+```
+- Replace `<day>` with the day number you want to run (e.g., `9`, `22`).
+- you can also run a specific part of a day by providing a second argument:
+    - if you want to run it with a personal testcase specified in `test.txt` you can add a third argument `t`
+```bash
+python runDay.py <day> <part> [t]
+```
 
-| Tag | Teil 1 | Teil 2 | Teil 3 |
+##  📅 Personal Progress
+
+| Day | Part 1 | Part 2 | Part 3 |
 |-----|:------:|:------:|:------:|
 | **1**  | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day01/p1.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day01/p2.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day01/p3.py) |
 | **2**  | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day02/p1.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day02/p2.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day02/p3.py) |
@@ -28,7 +44,7 @@
 | **20**  | ❌ | ❌ | ❌ |
 
 ---
-Legende: ✅ = Gelöst ❌ = Nicht geschafft
+Legend: ✅ = Solved ❌ = Not solved
 
 ---
 
