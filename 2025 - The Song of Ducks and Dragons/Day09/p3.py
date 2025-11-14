@@ -16,17 +16,22 @@ for i, p1 in enumerate(content):
             else:
                 families.append((i+1, j+1, k+1))
 
-fams = []        
-for p1, p2, ch in families:
-    for fam in fams:
-        if p1 in fam or p2 in fam or ch in fam:
-            fam.add(p1)
-            fam.add(p2)
-            fam.add(ch)
-    else:
-        fams.append(set([p1,p2,ch]))
-                
-                    
-biggestFam = max(fams)
-res = sum(list(biggestFam))
+fams = []
+found = []    
+for i, fam1 in enumerate(families):
+    if i in found: continue
+    newFam = set(fam1)
+    found.append(i)
+    changes = True
+    while changes:
+        changes = False
+        for j, fam2 in enumerate(families[i:], start=i):
+            if j in found: continue
+            if any(x in newFam for x in fam2):
+                changes = True
+                for x in fam2: newFam.add(x)
+                found.append(j)
+    fams.append(newFam)
+
+res = sum(list(max(fams)))
 print(res)
