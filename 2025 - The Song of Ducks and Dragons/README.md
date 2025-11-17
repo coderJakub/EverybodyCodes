@@ -31,8 +31,13 @@ python runDay.py <day> <part> [t]
 | **7**  | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day07/p1.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day07/p2.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day07/p3.py) |
 | **8**  | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day08/p1.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day08/p2.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day08/p3.py) |
 | **9**  | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day09/p1.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day09/p2.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day09/p3.py) |
+<<<<<<< HEAD
 | **10**  | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day10/p1.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day10/p2.py) | ❌ |
 | **11**  | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day11/p1.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day11/p2.py) | [✅](https://github.com/coderJakub/EverybodyCodes/tree/main/2025%20-%20The%20Song%20of%20Ducks%20and%20Dragons/Day11/p3.py) |
+=======
+| **10**  | ❌ | ❌ | ❌ |
+| **11**  | ❌ | ❌ | ❌ |
+>>>>>>> 0f52e1158a48205b82c671a63174fc7957fa4694
 | **12**  | ❌ | ❌ | ❌ |
 | **13**  | ❌ | ❌ | ❌ |
 | **14**  | ❌ | ❌ | ❌ |
