@@ -15,3 +15,5 @@ for i, el in enumerate(content):
     
 wheel.extend(wheel2[::-1])
 print(wheel[2025%len(wheel)])
+
+# oder: print(([1]+[*content[::2]]+[*content[1::2][::-1]])[2025%(len(content)+1)])
